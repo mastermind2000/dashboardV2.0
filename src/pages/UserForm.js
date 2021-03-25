@@ -9,29 +9,11 @@ import Rendu from "../components/double";
 export class UserForm extends Component {
   state = {
     step: 1,
-    firstName: "",
-    lastName: "",
-    email: "",
+    Name: "",
     status: "",
-    codepostale: "",
-    centreinteret: "",
-    age: "",
-    ville: "",
-    competence: "",
-    detailscompetence: "",
-    nameexperience: "",
-    dateexperience: "",
-    detailsexperience: "",
-    adresse: "",
-    etablissementname: "",
-    diplome: "",
-    detailsdiplome: "",
-    profilnote: "",
-    datediplome: "",
-    twitter: "",
-    github: "",
-    linkedin: "",
-    website: ""
+    Role: "",
+    Group: "",
+    Policy: ""
   };
   // Go to next step
   nextStep = () => {
@@ -60,57 +42,12 @@ export class UserForm extends Component {
 
   render() {
     const { step } = this.state;
-    const {
-      firstName,
-      lastName,
-      email,
-      status,
-      codepostale,
-      centreinteret,
-      age,
-      ville,
-      competence,
-      detailscompetence,
-      nameexperience,
-      dateexperience,
-      detailsexperience,
-      adresse,
-      profilnote,
-      namediplome,
-      datediplome,
-      detailsdiplome,
-      etablissementname,
-
-      twitter,
-      github,
-      linkedin,
-      website
-    } = this.state;
+    const { Name, Role, Group, Policy } = this.state;
     const values = {
-      firstName,
-      lastName,
-      email,
-      status,
-      codepostale,
-      centreinteret,
-      age,
-      ville,
-      competence,
-      detailscompetence,
-      nameexperience,
-      dateexperience,
-      detailsexperience,
-      adresse,
-      profilnote,
-      datediplome,
-      namediplome,
-      detailsdiplome,
-      etablissementname,
-
-      twitter,
-      github,
-      linkedin,
-      website
+      Name,
+      Role,
+      Group,
+      Policy
     };
 
     switch (step) {
@@ -152,17 +89,7 @@ export class UserForm extends Component {
             values={values}
           />
         );
-      //
       case 5:
-        return (
-          <Rendu
-            nextStep={this.nextStep}
-            prevStep={this.prevStep}
-            values={values}
-          />
-        );
-
-      case 6:
         return <Success firstStep={this.firstStep} />;
     }
   }

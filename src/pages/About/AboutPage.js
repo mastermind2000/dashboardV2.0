@@ -1,11 +1,8 @@
 import React from "react";
 
 const About = () => (
-  <div className="custom-file mb-3">
-    <input type="file" className="custom-file-input" id="customFile2" />
-    <label className="custom-file-label" htmlFor="customFile2">
-      Choose file...
-    </label>
+  <div>
+    <h1> To be decided </h1>
   </div>
 );
 

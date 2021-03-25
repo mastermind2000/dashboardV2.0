@@ -25,43 +25,14 @@ export class FormUserDetails extends Component {
         <AppBar style={{ background: "#2E3B55" }} position="sticky">
           <Toolbar title="Enter User Details">
             <Typography color="inherit" variant="title">
-              Details personnel
+              Enter Username
             </Typography>
           </Toolbar>
         </AppBar>
         <TextField
-          label="First Name"
-          onChange={handleChange("firstName")}
-          defaultValue={values.firstName}
-        />
-        <br />
-
-        <TextField
-          label="Last Name"
-          onChange={handleChange("lastName")}
-          defaultValue={values.lastName}
-        />
-
-        <br />
-
-        <TextField
-          label="Age"
-          onChange={handleChange("age")}
-          defaultValue={values.age}
-        />
-
-        <br />
-        <TextField
-          label="Email"
-          onChange={handleChange("email")}
-          defaultValue={values.Email}
-        />
-
-        <br />
-        <TextField
-          label="Description du profil "
-          onChange={handleChange("profilnote")}
-          defaultValue={values.profilenote}
+          label="Name"
+          onChange={handleChange("Name")}
+          defaultValue={values.Name}
         />
         <br />
         <br />

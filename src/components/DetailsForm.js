@@ -28,79 +28,20 @@ export class DetailsForm extends Component {
     return (
       <Fragment>
         <AppBar style={{ background: "#8A0015" }} position="sticky">
-          <Toolbar title="Enter Personal Information">
+          <Toolbar title="Add Policies">
             <Typography color="inherit" variant="title">
-              Details professionel
+              Add Policies
             </Typography>
           </Toolbar>
         </AppBar>
-        <br /><p>Compétences</p>
+        <br /><p>Policy</p>
         <TextField
-          label="Competence"
-          hintText="competence"
-          onChange={handleChange("competence")}
-          defaultValue={values.competence}
+          label="Policy"
+          hintText="Policy"
+          onChange={handleChange("Policy")}
+          defaultValue={values.Policy}
         />
         <br />
-        <TextField
-          label="Competence Detail"
-          hintText="detailscompetence"
-          onChange={handleChange("detailscompetence")}
-          defaultValue={values.detailscompetence}
-        />
-        <br />
-        <br />
-        <p>Experiences</p>
-        <TextField
-          label="Experience"
-          hintText="nameexperience"
-          onChange={handleChange("nameexperience")}
-          defaultValue={values.nameexperience}
-        />
-        <br />
-        <TextField
-          label="Experience date"
-          hintText="dateexperience"
-          onChange={handleChange("dateexperience")}
-          defaultValue={values.dateexperience}
-        />
-        <br />
-        <TextField
-          label="Experience details"
-          hintText="detailsexperience"
-          onChange={handleChange("detailsexperience")}
-          defaultValue={values.detailsexperience}
-        />
-        <br />
-        <br />
-        <p>Cursus scolaire</p>
-        <TextField
-          label="Diplome"
-          hintText="namediplome"
-          onChange={handleChange("namediplome")}
-          defaultValue={values.namediplome}
-        />
-        <br />
-        <TextField
-          label="Diplome date"
-          hintText="datediplome"
-          onChange={handleChange("datediplome")}
-          defaultValue={values.datediplome}
-        />
-        <br />
-        <TextField
-          label="Etablissemement name"
-          hintText="etablissemementname"
-          onChange={handleChange("etablissementname")}
-          defaultValue={values.etablissementname}
-        />
-        <br />
-        <TextField
-          label="Details Diplome"
-          hintText="Details diplome"
-          onChange={handleChange("detailsdiplome")}
-          defaultValue={values.detailsdiplome}
-        />
         <br />
         <br />
         <Button

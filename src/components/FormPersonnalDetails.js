@@ -28,77 +28,30 @@ export class FormPersonalDetails extends Component {
     return (
       <Fragment>
         <AppBar style={{ background: "#333" }} position="sticky">
-          <Toolbar title="Enter Personal Information">
+          <Toolbar title="Add Roles/Group">
             <Typography color="inherit" variant="title">
-              Autre details
+              Add Roles/Group
             </Typography>
           </Toolbar>
         </AppBar>
-        <TextField
-          label="Ville"
-          hintText="Enter votre ville"
-          onChange={handleChange("ville")}
-          defaultValue={values.ville}
-        />
+        <p> Roles </p>
         <br />
         <TextField
-          label="Adresse"
-          hintText="Enter votre adresse"
-          onChange={handleChange("adresse")}
-          defaultValue={values.adresse}
-        />
-        <br />
-        <TextField
-          label="Code postale"
-          hintText="Enter Code postale"
-          onChange={handleChange("codepostale")}
-          defaultValue={values.codepostale}
-        />
-        <br />
-        <TextField
-          label="Status"
-          hintText="Enter Your Status"
-          onChange={handleChange("status")}
-          defaultValue={values.status}
-        />{" "}
-        <br />
-        <TextField
-          label="Centre d'interet"
-          hintText="Centre d'interet"
-          onChange={handleChange("centreinteret")}
-          defaultValue={values.occupation}
+          label="Role"
+          hintText="Add Role"
+          onChange={handleChange("Role")}
+          defaultValue={values.Role}
         />
         <br />
         <br />
         <br />
-        <p>Facultatif</p>
+        <p>Group</p>
         <br />
         <TextField
-          label="Website"
-          hintText="website"
-          onChange={handleChange("website")}
-          defaultValue={values.website}
-        />
-        <br />
-        <TextField
-          label="Linkedin"
-          hintText="Linkedin"
-          onChange={handleChange("linkedin")}
-          defaultValue={values.linkedin}
-        />
-        <br />
-        <TextField
-          label="Twitter"
-          hintText="Twitter"
-          onChange={handleChange("twitter")}
-          defaultValue={values.twitter}
-        />
-        <br />
-        <TextField
-          label="GitHub "
-          hintText="GitHub"
-          onChange={handleChange("github")}
-          defaultValue={values.github}
+          label="Group"
+          hintText="Add Group"
+          onChange={handleChange("Group")}
+          defaultValue={values.Group}
         />
         <br />
         <br />

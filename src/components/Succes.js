@@ -24,16 +24,14 @@ export class Success extends Component {
           </Toolbar>
         </AppBar>
         <br />
-        <Typography variant="title">
-          Nous avons bien enregistrer vos informations
-        </Typography>
+        <Typography variant="title">Changes saved</Typography>
         <br />
-        <Typography>Si vous souhaitez recommencer cliquer ici </Typography>
+        <Typography> User Properties updated </Typography>
         <Button
           style={{ background: "#2E3B55", color: "#FFFFFF" }}
           onClick={this.first}
         >
-          Recommencer
+          Edit Another User
         </Button>
       </MuiThemeProvider>
     );

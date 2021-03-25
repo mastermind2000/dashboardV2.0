@@ -18,32 +18,7 @@ export class Confirm extends Component {
 
   render() {
     const {
-      values: {
-        firstName,
-        lastName,
-        email,
-        status,
-        codepostale,
-        centreinteret,
-        age,
-        ville,
-        competence,
-        detailscompetence,
-        nameexperience,
-        dateexperience,
-        detailsexperience,
-        adresse,
-        profilnote,
-        datediplome,
-        namediplome,
-        detailsdiplome,
-        etablissementname,
-
-        twitter,
-        github,
-        linkedin,
-        website
-      }
+      values: { Name, Role, Group, Policy }
     } = this.props;
     return (
       <Fragment>
@@ -65,104 +40,16 @@ export class Confirm extends Component {
           }
         >
           <ListItem>
-            <ListItemText primary="First Name" secondary={firstName} />
+            <ListItemText primary="Name" secondary={Name} />
           </ListItem>
           <ListItem>
-            <ListItemText primary="Last Name" secondary={lastName} />
+            <ListItemText primary="Role" secondary={Role} />
           </ListItem>
           <ListItem>
-            <ListItemText primary="Email" secondary={email} />
+            <ListItemText primary="Group" secondary={Group} />
           </ListItem>
           <ListItem>
-            <ListItemText
-              primary="Descritpion du profil"
-              secondary={profilnote}
-            />
-          </ListItem>
-          <ListItem>
-            <ListItemText primary="Age" secondary={age} />
-          </ListItem>
-
-          <ListItem>
-            <ListItemText primary="Ville" secondary={ville} />
-          </ListItem>
-
-          <ListItem>
-            <ListItemText primary="Adresse" secondary={adresse} />
-          </ListItem>
-          <ListItem>
-            <ListItemText primary="Code Postale" secondary={codepostale} />
-          </ListItem>
-          <ListItem>
-            <ListItemText primary="Status Social" secondary={status} />
-          </ListItem>
-          <ListItem>
-            <ListItemText
-              primary="Centre d'intéret"
-              secondary={centreinteret}
-            />
-          </ListItem>
-          <ListItem>
-            <ListItemText primary="Twitter" secondary={twitter} />
-          </ListItem>
-          <ListItem>
-            <ListItemText primary="Linkedin" secondary={linkedin} />
-          </ListItem>
-
-          <ListItem>
-            <ListItemText primary="Website" secondary={website} />
-          </ListItem>
-
-          <ListItem>
-            <ListItemText primary="GIthub" secondary={github} />
-          </ListItem>
-
-          <ListItem>
-            <ListItemText primary="Competence" secondary={competence} />
-          </ListItem>
-          <ListItem>
-            <ListItemText
-              primary="Details compétences"
-              secondary={detailscompetence}
-            />
-          </ListItem>
-          <ListItem>
-            <ListItemText
-              primary="Experience name"
-              secondary={nameexperience}
-            />
-          </ListItem>
-          <ListItem>
-            <ListItemText
-              primary="Experience date"
-              secondary={dateexperience}
-            />
-          </ListItem>
-
-          <ListItem>
-            <ListItemText
-              primary="Details experience"
-              secondary={detailsexperience}
-            />
-          </ListItem>
-
-          <ListItem>
-            <ListItemText primary="Diplome" secondary={namediplome} />
-          </ListItem>
-          <ListItem>
-            <ListItemText primary="Diplome Date" secondary={datediplome} />
-          </ListItem>
-          <ListItem>
-            <ListItemText
-              primary="Details diplome"
-              secondary={detailsdiplome}
-            />
-          </ListItem>
-          <ListItem>
-            <ListItemText
-              primary="Etablissement name"
-              secondary={etablissementname}
-            />
+            <ListItemText primary="Policy" secondary={Policy} />
           </ListItem>
         </List>
 
